@@ -1,0 +1,55 @@
+
+
+
+
+
+print('welcome to the Monterey Peninsula.')
+\n
+\n
+print('people who live near the coast have a 5-10 faster metabolism than those inland?') 
+
+ 
+  
+
+\n
+\n
+
+location = 'seaside', 'monterey', 'csumb', 'room 110'
+
+
+street = 'a', 'b', 'c', 'd'
+
+
+location = requestString("current location?")
+
+if location == 'seaside':
+    print('great, looks like your in Seaside, CA!')
+    print('Out of the options below, What are the nearest cross streets to you?')
+    print('a: Fremont & Broadway')
+    print('b: General Jim Moore & Coe')
+    print('c: Del Monte Blvd & English')  
+    #street = 'Fremont & Broadway'  
+
+street = requestString("current street?") 
+
+
+if street == 'a': 
+        print('great mexican food near you')
+
+if street == 'b': 
+        print('looks like the nearest restaurants would be in Seaside')
+        
+if street == 'c': 
+        print('monterey produce stand is right on the corner!')
+        
+if location == 'monterey': 
+    print('monterey is a great city')
+    print('cannery row has great clam chowder, unbeatable clam chowder')
+    
+
+if location == 'room 110': 
+    print('no food or drink allowed')
+
+if location == 'csumb': 
+    print('limited choices, but there are a few coffee shops around')
+   
