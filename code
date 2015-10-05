@@ -1,0 +1,35 @@
+Folder = "C:/Users/Kai/Desktop/Project 2/"
+MD = Folder + "MD.png" 
+BK = Folder + "BK.jpg"
+CH = Folder + "CH.png"
+md = makePicture(MD)
+bk = makePicture(BK)
+ch = makePicture(CH)
+city = requestString("Where are you located")
+if city == "seaside":
+  print "Here are places to eat in " + city 
+  show(bk)
+  print "1. burger king"
+  print "1944 Fremont Blvd"
+  print "open 11am-8pm"
+  print "2. The Breakfast Club"
+  print "1130 Fremont Blvd #201"
+  print "open 6am-9pm"
+  print "3. Fishwife Seafood & Cafe"
+  print "798 Trinity Ave"
+  print "open 11am-9am" 
+  print "4. El Migueleno Restaurant"
+  print "1066 Broadway Ave"
+  print "open 11am-8:30pm"
+if city == "csumb":
+  print "Here are places to eat in " + city 
+  show(md)
+if city == "monterey":
+  print "Here are places to eat in " + city
+  show(ch)
+  print "1. Old Fisherman's Grotto"
+  print "39 Fishermans wharf"
+  print "open 10:30am-10pm"
+  print "2.Montrio Bistro"
+  print "414 Calle Principal"
+  print "open 4:30-10:pm"
