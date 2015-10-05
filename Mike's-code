@@ -1,0 +1,34 @@
+Sushi={}
+hamburger=[]
+print("I'm Hungry")
+print("Where are you?")
+print("Seaside")
+if ("Seaside"):
+    print "Which street in Seaside?"
+else:
+    print "Can't find location"
+print("Fremont" "Blvd")
+print("What do you want to eat?")
+print{"I, want sushi"}
+if {"sushi"}:
+    print "Their is a sushi place in seaside"
+else:
+    "None Available"
+    print("No places available")
+print("Are their any nearby")
+print("yes")
+print("Where?")
+if ("yes"):
+    print("Their is one on San Pablo CT")
+else:
+    print("None nearby")
+print('Ok Thank You')
+import Seaside,Monterey
+def click(x,y):
+    seaside.SetCursorPos((x,y))
+    seaside.mouse_event(seaside.MOUSEEVENTF_LEFTDOWN,x,y,0,0)
+    seaside.mouse_event(seaside.MOUSEEVENTF_LEFTUP,x,y,0,0)
+click(10,10)
+print ("sudo apt-get install imagemagick")
+seaside = Image,open("seaside")
+"Seaside".show()
