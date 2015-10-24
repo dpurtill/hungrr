@@ -1,0 +1,260 @@
+
+myPic = makePicture("/Users/Admin/Downloads/HungRr/img/BigMap.png")
+seaside = makePicture("/Users/Admin/Downloads/HungRr/img/bm_seaside.png")
+monterey = makePicture("/Users/Admin/Downloads/HungRr/img//bm_monterey.png")
+pg = makePicture("/Users/Admin/Downloads/HungRr/img/bm_pg.png")
+
+pg_id = makePicture("/Users/Admin/Downloads/HungRr/img/pg.png")
+ss_id = makePicture("/Users/Admin/Downloads/HungRr/img/ss.png")
+my_id = makePicture("/Users/Admin/Downloads/HungRr/img/my.png")
+
+import os  #needed to write data to txt file
+
+
+logger = open('/Users/Admin/Downloads/HungRr/log.txt  ','w')   # the 'w' here is write mode string, and we're assuming it stands for write. 
+
+space_string = "______"
+legendstring = "\nUser Guide:\n"
+SSstring = "\n SS = Seaside\n"
+SSkeysting = "            \n A: Downtown \n B: Post No Bills Bar \n C: 238/Fremont \n"
+MYAstring = "Cannery Row:\n"
+MYstring = "\n MY = Monterey\n"
+MYkeystring = "            \n A: Cannery Row \n B: Downtown \n C: The Wharf \n"
+PGstring = "\n PG = Pacific Grove\n"
+PGkeystring = "            \n A: Lighthouse Ave \n B: Lovers Beach \n C: The Aquarium \n \n"
+EXstring = "example: MY:#.....this # is your most recent HungRr level in the two letter region.\n" 
+TYstring = "\nThank you for choosing HungRr!\n"
+
+
+
+logger.close()
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+import os
+
+# Create empty dictionary
+hungRr_details = {}
+# Create an empty string
+enter_hungRr = ''
+
+# Enter a loop to enter inforation from keyboard
+while enter_hungRr.upper() != 'X':
+    
+    
+    
+    
+    
+    show(myPic)
+    
+    
+    print 'welcome to +** HungRr **+ an AlephOne project.'
+
+
+    # If the file exists, then allow us to manage it, otherwise force creation.
+    if os.path.isfile('/Users/Admin/Downloads/HungRr/log.txt'):
+        enter_hungRr = requestString("Would you like to create a team or manage an existing team?\n (Enter 'H' to pin your HungRr) ")
+    else:
+        # Force creation of file if it does not yet exist.
+        enter_hungRr = 'H'
+
+
+    if enter_hungRr.upper() == 'H':
+
+
+
+        enter_cont = 'Y'
+
+
+        while enter_cont.upper() == 'Y':
+
+            name = 'SS' , 'MY', 'PG' 
+            name = requestString('enter current vicinity: SS (Seaside) / MY (Monterey) / PG (Pacific Grove)')
+            
+            
+            if name == 'SS':
+            
+               show(seaside)
+    
+     
+    
+   
+      
+               import time
+
+
+               time.sleep(2)
+
+    
+               show(ss_id)
+     
+               time.sleep(1)
+    
+               location = 'A' , 'B' , 'C'
+               location = requestString ("pin your HungRr: A for Downtown, B for Post No Bills Bar, C for 238/Fremont")
+          
+               if location == 'A':
+                addOvalFilled(ss_id, 630, 167, 50, 50, blue)
+                repaint(ss_id)
+                
+                
+        
+               if location == 'B': 
+                addOvalFilled(ss_id, 408, 308, 50, 50, red)
+                repaint(ss_id)
+    
+               if location == 'C':
+                addOvalFilled(ss_id, 442, 410, 50, 50, green)
+                repaint(ss_id)
+            
+            
+            
+          
+
+            if name == 'MY': 
+    
+               show(monterey)
+    
+   
+      
+               import time
+
+               print "Ah, good ole Monterey"
+               time.sleep(2)
+      
+    
+               show(my_id)
+               time.sleep(1)
+    
+    
+    
+    
+    
+    
+               location = 'A' , 'B' , 'C'
+               location = requestString ("pin your HungRr: A for Cannery Row, B for Downtown, C for The Wharf")
+    
+               if location == 'A':
+                addOvalFilled(my_id, 630, 167, 50, 50, blue)
+                repaint(my_id)
+                
+                
+    
+               if location == 'B': 
+                addOvalFilled(my_id, 733, 624, 50, 50, red)
+                repaint(my_id)
+    
+               if location == 'C':
+                addOvalFilled(my_id, 782, 444, 50, 50, green)
+                repaint(my_id)
+                
+                
+            if name == 'PG': 
+    
+               show(pg)
+      
+               import time
+
+               print "Ah, good ole Pacific Grove"
+               time.sleep(2)
+               print "where are you?"
+    
+               show(pg_id)
+      
+      
+       
+               time.sleep(1)
+    
+    
+    
+    
+    
+    
+               location = 'A' , 'B' , 'C'
+               location = requestString ("pin your HungRr: A for Lighthouse, B for Lovers Beach, C for Aquarium")
+    
+               if location == 'A':
+                addOvalFilled(pg_id, 441, 255, 50, 50, blue)
+                repaint(pg_id)
+                
+               if location == 'B': 
+                addOvalFilled(pg_id, 706, 242, 50, 50, red)
+                repaint(pg_id)
+    
+               if location == 'C':
+                addOvalFilled(pg_id, 1027, 463, 50, 50, green)
+                repaint(pg_id)
+      
+               
+               
+               # below is an added feature that we took out. 
+               #money = requestString('enter the amount of money you had on you: ')
+              
+                
+               # Assign position to a dictionary key of the player name
+               #player_dict[time] = money
+               #while location ==
+               #else: 
+        
+                #requestString("thank you, your HungRr has been logged. press ok to enter more HungRr")
+            
+            
+            
+            
+            
+            # Capture keyboard entry into position variable
+            time.sleep(1)
+            
+            position = requestString('HungRr level 1-10?     1 being I just ate, 10 being starving: ')
+            # Assign position to a dictionary key of the player name
+            hungRr_details[name] = position
+            
+            specificposition = requestString('please enter the AM/PM time of your HungRr:')
+            hungRr_details[location] = specificposition
+            enter_cont = requestString("your HungRr has been tracked. enter more? (Press 'N' to exit or 'Y' to continue)")
+        else:
+            enter_hungRr = 'X'
+
+
+else:
+
+    if hungRr_details:
+
+        print 'wrting HungRr Info...'
+        # call the file
+        HungRr = open('/Users/Admin/Downloads/HungRr/log.txt  ','w')  
+        # this writes HungRr stats to the file......we had trouble finding an "append" write method in Jython.
+        # right now, you can only see the most recent entry.
+        # for example you can't log SS (Seaside) twice
+       
+        for hungrr in hungRr_details:
+            HungRr.write('%s:%s\n' % (hungrr.strip(),hungRr_details[hungrr].strip()))  #writes stats to txt file
+
+        
+        
+
+        HungRr.write(legendstring)
+
+        HungRr.write(SSstring)
+        HungRr.write(SSkeysting)
+
+        HungRr.write(MYstring)
+        HungRr.write(MYkeystring)
+
+        HungRr.write(PGstring)
+        HungRr.write(PGkeystring)
+        
+        HungRr.write(EXstring)
+        HungRr.write(TYstring)
+
+
+        HungRr.close()   # concludes printing to txt file.
